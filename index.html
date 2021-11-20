@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <style>
+        body {
+            text-align: center;
+            margin:0px;
+        }
+        
+        button {
+            width: 130px;
+            height: 40px;
+            border-radius: 10%;
+            
+            font-size: large;
+            margin-top: 40px;
+            color:crimson;
+        }
+        
+        div{
+            width:50%;
+            height:40%;
+            align-items: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 200px 0px 0px 300px;
+
+
+        }
+        #main{
+            color:black;
+        }
+    </style>
+
+
+
+
+    <script>
+        var count = 0;
+
+        function increment() {
+                     count++;                   
+                        document.getElementById("main").innerHTML = count ;                       
+        }
+
+        function decrement() {
+
+            count--;
+            
+                document.getElementById("main").innerHTML = count ;
+ 
+                
+                
+            
+            
+
+                      
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+
+<div>
+
+<h1>Counter</h1>
+    <button onclick="increment()">Increment </button>
+    <button onclick="decrement()">Decrement</button>
+    <h3 id="main"></h3>
+</div>
+    
+</body>
+</html>
